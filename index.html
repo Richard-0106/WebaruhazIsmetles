@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="Ajax.js"></script>
+    <script src="Kosar.js"></script>
+    <script src="Termekek.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Webarúház</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="fizetes.html">Fizetés</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <article>
+            <aside>
+                <section class="szures">
+                    <form>
+                        <fieldset>
+                            <legend>Rendezési szempontok</legend>
+                            <select name="rendezesiszempont" id="rendezesiszempont">
+                                <option value="nincs">Alapértelmezett megjelenés</option>
+                                <option value="nevRendezNo">Név szerint növekvő sorrendben</option>
+                                <option value="nevRendezCsokken">Név szerint csökkenő sorrendben</option>
+                                <option value="arRendezNo">Ár szerint növekvő sorrendben</option>
+                                <option value="arRendezCsokken">Ár szerint csökkenő sorrendben</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+
+                            <label for="szures">Terméknév:</label>
+                            
+                            <input type="text"
+                            name="szures"
+                            id="szures">
+                        </fieldset>
+                    </form>
+                </section>
+<section class="sablonhoz">
+    <div class=termek>
+        <h3 class="nev">Lorem ipsum dolor</h3>
+        <img src="" alt="" class="kep">
+        <p class="leiras">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            ages, and more recently with desktop publishing software like Aldus PageMaker including versions
+            of Lorem Ipsum.</p>
+        <button class="kosarba">Kosárba</button>
+        <span class="ar">125</span>
+    </div>
+</section>
+
+            </aside>
+            <section class="termekek">
+               
+            </section>
+            <section class="kosar">
+                <h3>A kosár tartalma:
+                </h3>
+                <div id="kosaram">
+
+                </div>
+                <span id="osszAr">
+                </span>
+                <a href="fizetes.html"><button class="fizetes">Tovább a fizetéshez.....</button></a>
+
+            </section>
+        </article>
+        <footer></footer>
+    </main>
+</body>
+
+</html>

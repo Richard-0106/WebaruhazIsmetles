@@ -1,0 +1,9 @@
+td img{
+    width:100px;
+}
+table{
+    width:100%;
+}
+tr:nth-child(odd){
+    background-color: aliceblue;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Ajax.js"></script>
+    <script src="Termekek.js"></script>
+    <script src="admin.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Webarúház</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="fizetes.html">Fizetés</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section>
+               <table class="termekek">
+                   <thead>
+
+                       <tr>
+                           <th>név</th>
+                           <th>Kép</th>
+                           <th>Leírás</th>
+                           <th>Ár</th>
+                       <th></th>
+                    </tr>
+                    <tr class="termek">
+                        <td class="nev"></td>
+                        <td class="kep-tarolo"><img class="kep" src="kepek/kep_1.jpg" alt=""></td>
+                        <td class="leiras"></td>
+                        <td class="ar"></td>
+                        <td>
+                            <button class="torol">Torol</button>
+                            <button class="modosit">Módosít</button>
+                        </td>
+                    </tr>
+                </thead>
+               </table>
+            </section>
+            <section class="urlap">
+                <fieldset>Adatok módosítása új adat feltöltése</legend>
+                    <label for="termekID">Azonosító:</label>
+                    <input type="text" name="termekID" id="termekID" disabled><br><br>
+
+                    <label for="termeknev">Terméknév:</label>
+                    <input type="text" name="termeknev" id="termeknev"><br><br>
+                    
+                    <label for="termekLeiras">Leírás:</label>
+                    <textarea name="termekLeiras" id="termekLeiras" cols="30" rows="10"></textarea><br><br>
+                    
+                    <label for="termekAr">Ár:</label>
+                    <input type="text" name="termekAr" id="termekAr"><br><br>
+                
+                    <label for="termekKep">Válasszon Képet:</label>
+                    <input type="file" name="termekKep" id="termekKep"><br><br>
+                    <div>
+                        <input type="button" id="ajaxUj" value="Új adat">
+                        <input type="button" id="ajaxModosit" value="Módosít">
+
+                    </div>
+                
+                    
+                </fieldset>
+            </section>
+        </article>
+        <footer></footer>
+    </main>
+</body>
+
+</html>
